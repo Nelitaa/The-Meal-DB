@@ -1,3 +1,101 @@
-body {
-  background-color: bisque;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+/* start universal styles */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 1.4;
+  position: relative;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* end universal styles */
+/* start common styles */
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.pd-y {
+  padding: 78px 0;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+/* end common styles */
+/* start content styles */
+/* start footer */
+footer {
+  background-color: #13303e;
+}
+.footer__container__parfoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 42px;
+}
+
+.footer__container__parfoot * {
+  margin-bottom: 18px;
+}
+.footer__container__parfoot__foot > h2 {
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 9px azure;
+  color: #13303e;
+}
+.footer__container__parfoot__foot > h3 {
+  color: #ffd857;
+}
+.footer__container__parfoot__foot > p,
+.footer__container__parfoot__foot a {
+  color: #fff;
+}
+.footer__container__parfoot__foot input {
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  padding: 9px;
+  background-color: #ffd857;
+  font-size: 16px;
+}
+.footer__container__parfoot__foot input::placeholder {
+  color: #fff;
+}
+footer hr {
+  margin-bottom: 50px;
+}
+footer .last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .last > div {
+  color: #fff;
+}
+/* end footer */
+/* end content styles */
+
+/* start media query styles */
+@media screen and (max-width: 768px) {
+  .footer__container__parfoot {
+    gap: 16px;
+  }
+  footer .last {
+    gap: 23px;
+  }
+}
+/* end media query styles */
