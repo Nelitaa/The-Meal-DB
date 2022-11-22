@@ -32,7 +32,7 @@ a {
 }
 
 .pd-y {
-  padding: 78px 0;
+  padding: 25px 0;
 }
 
 .container {
@@ -49,61 +49,28 @@ footer {
   background-color: #13303e;
 }
 
-.footer__container__parfoot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 42px;
-}
-
-.footer__container__parfoot * {
-  margin-bottom: 18px;
-}
-
-.footer__container__parfoot__foot > h2 {
-  background-color: antiquewhite;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 1px 9px azure;
-  color: #13303e;
-}
-
-.footer__container__parfoot__foot > h3 {
-  color: #ffd857;
-}
-
-.footer__container__parfoot__foot > p,
-.footer__container__parfoot__foot a {
-  color: #fff;
-}
-
-.footer__container__parfoot__foot input {
-  border: 0;
-  outline: 0;
-  border-radius: 5px;
-  padding: 9px;
-  background-color: #ffd857;
-  font-size: 16px;
-}
-
-.footer__container__parfoot__foot input::placeholder {
-  color: #fff;
-}
-
-footer hr {
-  margin-bottom: 50px;
-}
-
 footer .last {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 23px;
 }
 
 footer .last > div {
-  color: #fff;
+  width: 307px;
+}
+
+footer .last > div:nth-child(1),
+footer .last > div:nth-child(3) {
+  color: #c3ccd1;
+}
+
+footer .last > div:nth-child(2) {
+  color: #ffd857;
+  box-shadow: 0 2px 14px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /* end footer */
@@ -112,11 +79,11 @@ footer .last > div {
 
 /* start media query styles */
 @media screen and (max-width: 768px) {
-  .footer__container__parfoot {
-    gap: 16px;
-  }
-
   footer .last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 23px;
   }
 }
