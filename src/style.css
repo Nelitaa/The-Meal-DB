@@ -9,8 +9,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 2% 0 2%;
-  background-color: #23180d;
+  background-color: #13303e;
   height: 10vh;
+}
+
+h1 {
+  color: #ffd857;
+  font-size: xx-large;
 }
 
 .icon-bar-button {
@@ -18,7 +23,7 @@ header {
   height: 30px;
   border: #fff solid 1px;
   border-radius: 10%;
-  background-color: #23180d;
+  background-color: #13303e;
   cursor: pointer;
 }
 
@@ -32,12 +37,6 @@ header {
 
 .nav-list {
   display: none;
-}
-
-.logo-img {
-  display: flex;
-  min-width: 50px;
-  max-width: 300px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -60,5 +59,13 @@ header {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+  }
+
+  .nav-list li a:hover {
+    color: #ffd857;
+  }
+
+  .nav-list li a:focus {
+    color: #ffd857;
   }
 }
