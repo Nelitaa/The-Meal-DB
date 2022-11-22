@@ -1,13 +1,12 @@
-import _ from 'lodash';
 import './style.css';
+import Meal from './modules/meal_class.js';
+import Api from './modules/api_class.js';
+import RENDER from './modules/render.js';
 
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+window.addEventListener('load', () => {
+  const API = new Api();
+  API.getMeals().then((data) => {
+    const MEALS = data.meals.map((meal) => new Meal(meal.strMeal, meal.strMealThumb));
+    RENDER(MEALS);
+  });
+});

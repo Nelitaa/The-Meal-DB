@@ -1,3 +1,69 @@
-body {
-  background-color: bisque;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5%;
+  padding: 5% 0 5% 5%;
+}
+
+.meal {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  height: 28%;
+}
+
+.container-name-likes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.meal-name {
+  color: #13303e;
+  margin-top: 0;
+}
+
+.container-likes {
+  display: flex;
+  flex-direction: column;
+}
+
+.like-icon {
+  align-self: center;
+  width: 30px;
+  cursor: pointer;
+}
+
+.likes {
+  margin-top: 0;
+}
+
+.reservations,
+.comments {
+  margin-bottom: 7%;
+  background-color: #13303e;
+  color: #ffd857;
+  width: 80%;
+  align-self: center;
+  border: #13303e 1px solid;
+  padding: 2% 0 2% 0;
+  cursor: pointer;
+}
+
+.reservations {
+  width: 100%;
+}
+
+.reservations:focus,
+.comments:focus {
+  background-color: #ffd857;
+  color: #13303e;
+  border: #ffd857 1px solid;
+}
+
+.reservations:hover,
+.comments:hover {
+  background-color: #ffd857;
+  color: #13303e;
+  border: #13303e 1px solid;
 }
