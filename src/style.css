@@ -81,10 +81,11 @@ footer .last > div:nth-child(2) {
 @media screen and (max-width: 768px) {
   footer .last {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 23px;
+    text-align: center;
   }
 }
 
