@@ -1,10 +1,11 @@
 // start import
-import "./style.css";
-const footer = require("./modules/footer.js");
+import './style.css';
+
+const footer = require('./modules/footer.js');
 // start import
 
 // start all required elements
-const parfoot = document.querySelector(".footer__container__parfoot");
+const parfoot = document.querySelector('.footer__container__parfoot');
 // end all required elements
 
 // start footer UI
