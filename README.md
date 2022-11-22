@@ -1,12 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Webpack Exercise
+# capstone js meals
 
-> This branch (webpack) I did in this branch the followings 👌 :
-- [x] Install webpack
-- [x] Add html template
-- [x] Add CSS
-- [x] Setup local dev server
+> In this branch I created the footer of the project I put this task in the todo kanban board after that I move it into the ;In progress I used the flexbox to place the items. 
 
 
 ## Built With
@@ -14,6 +10,9 @@
 - HTML
 - CSS
 - JavaScript 
+- webpack plugin html
+- webpack plugin CSS
+- Flexbox
 
 
 ## Getting Started
