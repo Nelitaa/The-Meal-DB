@@ -1,10 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
 }
 
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +17,7 @@ h1 {
   font-size: xx-large;
 }
 
-.icon-bar-button {
+.hamburger {
   width: 30px;
   height: 30px;
   border: #fff solid 1px;
@@ -27,7 +26,11 @@ h1 {
   cursor: pointer;
 }
 
-.icon-bar-button span {
+.hamburger.disabled {
+  display: none;
+}
+
+.hamburger span {
   display: flex;
   height: 2px;
   background-color: #fff;
@@ -35,37 +38,91 @@ h1 {
   margin: 5px;
 }
 
-.nav-list {
+.nav-list-desktop {
   display: none;
 }
 
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 100%;
+  top: 0;
+  background-color: #13303e;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.container-x {
+  display: flex;
+  flex-direction: row;
+  align-self: end;
+  color: #ffd857;
+  font-size: xx-large;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.container-x.disabled {
+  display: none;
+}
+
+.nav-list-mobile {
+  list-style: none;
+  padding-top: 30%;
+}
+
+.nav-list-mobile li {
+  margin-bottom: 30%;
+  text-align: center;
+}
+
+.nav-list-mobile li a {
+  text-decoration: none;
+  font-size: xx-large;
+  color: #fff;
+}
+
+.nav-list-mobile li a:focus {
+  color: #ffd857;
+}
+
+.nav-list-mobile li a:hover {
+  color: #ffd857;
+}
+
 @media only screen and (min-width: 768px) {
-  .icon-bar-button {
+  .hamburger {
     display: none;
   }
 
-  .nav-list {
+  .nav-list-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 30%;
   }
 
-  .nav-list li {
+  .nav-list-desktop li {
     list-style: none;
   }
 
-  .nav-list li a {
+  .nav-list-desktop li a {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
   }
 
-  .nav-list li a:hover {
+  .nav-list-desktop li a:hover {
     color: #ffd857;
   }
 
-  .nav-list li a:focus {
+  .nav-list-desktop li a:focus {
     color: #ffd857;
   }
 }

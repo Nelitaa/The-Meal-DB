@@ -1,13 +1,16 @@
-import _ from 'lodash';
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
+const HAMBURGER = document.querySelector('.hamburger');
+const MOBILE_MENU = document.querySelector('.mobile-menu');
+const X_BUTTON = document.querySelector('.container-x');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+HAMBURGER.addEventListener('click', () => {
+  HAMBURGER.classList.toggle('disabled');
+  MOBILE_MENU.classList.toggle('active');
+  X_BUTTON.classList.toggle('active');
+});
 
-  return element;
-}
-
-document.body.appendChild(component());
+X_BUTTON.addEventListener('click', () => {
+  MOBILE_MENU.classList.toggle('active');
+  HAMBURGER.classList.toggle('disabled');
+});
