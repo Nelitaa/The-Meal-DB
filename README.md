@@ -2,11 +2,7 @@
 
 # Webpack Exercise
 
-> This branch (webpack) I did in this branch the followings 👌 :
-- [x] Install webpack
-- [x] Add html template
-- [x] Add CSS
-- [x] Setup local dev server
+> This branch (footer) I did in this branch the footer of the project I created it with the flexbox to place items of it and I did the footer dynamically using js to display the content of it. 👌 :
 
 
 ## Built With
@@ -14,6 +10,9 @@
 - HTML
 - CSS
 - JavaScript 
+- ecmascript
+- webpack plugin HTML 
+- webpack plugin CSS
 
 
 ## Getting Started
