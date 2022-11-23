@@ -1,18 +1,19 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Webpack Exercise
+# Project Name
 
-> This branch (footer) I did in this branch the footer of the project I created it with the flexbox to place items of it and I did the footer dynamically using js to display the content of it. 👌 :
+> Description the project.
 
 
 ## Built With
 
-- HTML
-- CSS
-- JavaScript 
-- ecmascript
-- webpack plugin HTML 
-- webpack plugin CSS
+- Major languages
+- Frameworks
+- Technologies used
+
+## Live Demo (if available)
+
+[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
@@ -23,15 +24,33 @@
 
 To get a local copy up and running follow these simple example steps.
 
+### Prerequisites
+
+### Setup
+
+### Install
+
+### Usage
+
+### Run tests
+
+### Deployment
+
 
 
 ## Authors
 
-👤 **Author**
+👤 **Author1**
 
-- GitHub: [Osama Ashraf](https://github.com/osamaashraf6)
-- Twitter: [Osama Ashraf](https://twitter.com/OsamaAshraf578?t=l75KjrhQgK4h-vSPfgk1gA&s=08)
-- LinkedIn: [Osama Ashraf](https://www.linkedin.com/in/osama-salem-2a046b203)
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
