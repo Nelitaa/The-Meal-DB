@@ -27,7 +27,7 @@ const RENDER = (meals) => {
 
     const LIKE_IMG = document.createElement('img');
     LIKE_IMG.className = 'like-icon';
-    LIKE_IMG.src = './assets/heart-line.png';
+    LIKE_IMG.src = './assets/img/heart-line.png';
     LIKE_IMG.alt = 'like icon';
     CONTAINER_LIKES.appendChild(LIKE_IMG);
 
