@@ -82,6 +82,10 @@ h1 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-list-mobile li a {
   text-decoration: none;
   font-size: xx-large;
@@ -168,7 +172,6 @@ main {
   cursor: pointer;
 }
 
-
 /* start index styles */
 
 /*
@@ -224,10 +227,6 @@ html {
 /* start common styles */
 ul {
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 img {
