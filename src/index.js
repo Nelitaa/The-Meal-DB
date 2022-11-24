@@ -2,6 +2,7 @@ import './style.css';
 import Api from './modules/api_class.js';
 import RENDER from './modules/render.js';
 import ApiLikes from './modules/api_likes_class.js';
+import mealsCounter from './modules/meals_counter.js';
 
 const HAMBURGER = document.querySelector('.hamburger');
 const MOBILE_MENU = document.querySelector('.mobile-menu');
@@ -27,6 +28,7 @@ window.addEventListener('load', async () => {
     return meal;
   });
   RENDER(newMeals);
+  mealsCounter();
 
   document.addEventListener('click', (event) => {
     if (event.target.classList.contains('like-icon')) {
