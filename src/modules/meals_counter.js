@@ -1,6 +1,5 @@
 const mealsCounter = () => {
   const mealCounter = document.querySelectorAll('.meal-counter');
-  const totalMeals = document.querySelectorAll('.total-meals');
   let counter = 1;
 
   mealCounter.forEach((meal) => {
@@ -8,12 +7,14 @@ const mealsCounter = () => {
     counter += 1;
   });
 
+  const totalMeals = document.querySelectorAll('.total-meals');
   totalMeals.forEach((total) => {
-    if(mealCounter.length < 1){
+    if (mealCounter.length < 1) {
       total.innerHTML = ` (${0})`;
-    }else {
-      total.innerHTML = ` (${counter - 1})`;
+      return 0;
     }
+    total.innerHTML = ` (${mealCounter.length})`;
+    return (mealCounter.length);
   });
 };
 
