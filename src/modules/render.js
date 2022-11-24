@@ -1,3 +1,5 @@
+import postComments from './postcomments.js';
+
 const ALL_MEALS = document.querySelector('#all-meals');
 const RENDER = (meals, alls) => {
   meals.forEach((meal) => {
@@ -26,13 +28,14 @@ const RENDER = (meals, alls) => {
 
     const LIKE_IMG = document.createElement('img');
     LIKE_IMG.className = 'like-icon';
-    LIKE_IMG.src = './assets/heart-line.png';
+    LIKE_IMG.setAttribute('id', meal.id);
+    LIKE_IMG.src = './assets/img/heart-line.png';
     LIKE_IMG.alt = 'like icon';
     CONTAINER_LIKES.appendChild(LIKE_IMG);
 
     const LIKES = document.createElement('p');
     LIKES.className = 'likes';
-    LIKES.innerHTML = '5 likes';
+    LIKES.innerHTML = `${meal.likes} likes`;
     CONTAINER_LIKES.appendChild(LIKES);
 
     const COMMENTS = document.createElement('button');
@@ -90,6 +93,18 @@ const RENDER = (meals, alls) => {
       const close = document.querySelector('#close');
       close.addEventListener('click', () => {
         parmodal.style.display = 'none';
+      });
+      const form = document.querySelector('form');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const newData = {
+          item_id: meal.id,
+          username: form.name.value,
+          comment: form.textarea.value,
+        };
+        postComments(newData);
+        // console.log(meal.id, form.textarea.value, form.name.value);
+        // console.log('SUBMITED');
       });
     });
     MEAL.appendChild(COMMENTS);
