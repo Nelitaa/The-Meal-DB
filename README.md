@@ -2,11 +2,7 @@
 
 # Webpack Exercise
 
-> This branch (webpack) I did in this branch the followings 👌 :
-- [x] Install webpack
-- [x] Add html template
-- [x] Add CSS
-- [x] Setup local dev server
+> This branch (show__popup) I created the popup by using the API I used the API from my coding partner.
 
 
 ## Built With
@@ -14,6 +10,9 @@
 - HTML
 - CSS
 - JavaScript 
+- APi json
+- Ecma script
+- Flexbox 
 
 
 ## Getting Started
