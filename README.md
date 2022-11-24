@@ -1,5 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+
 # Webpack Exercise
 
 > This branch (post__comment) I made when the user write something in the input and wants to comment the data post into the API.
@@ -17,17 +18,31 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
+### Prerequisites
 
+Visual Studio Code or others
+npm
+
+### Install
+
+-Open up Github.
+-Clone this repository from GitHub by copying the HTTPS address. Write: git clone https://github.com/Nelitaa/Capstone-Project-JavaScript.git
+-On your VSCode hit "Open a new repository" and paste the URL.
+-Select the destination folder. Write: cd ECapstone-Project-JavaScript
+-All the files should be cloned to your local folder and are ready to be used.
+-Write: npm install
 
 ## Authors
 
-👤 **Author**
+👤 **Marianela Muñoz Gutierrez**
+
+- GitHub: [@Nelitaa](https://github.com/Nelitaa)
+- Twitter: [@MarianelaMunoz\_](https://twitter.com/MarianelaMunoz_)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/marianela-muñoz-gutierrez/)
+
+👤 **Osama Ashraf**
 
 - GitHub: [Osama Ashraf](https://github.com/osamaashraf6)
 - Twitter: [Osama Ashraf](https://twitter.com/OsamaAshraf578?t=l75KjrhQgK4h-vSPfgk1gA&s=08)
@@ -37,7 +52,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](/issues/).
 
 ## Show your support
 
@@ -45,12 +60,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse.
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](/LICENSE.md) licensed.

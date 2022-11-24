@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtract = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -11,7 +13,20 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'Mi Webpack APP',
+      filename: 'index.html',
       template: './src/index.html',
+    }),
+
+    new MiniCssExtract({
+      filename: '[name].css',
+      ignoreOrder: false,
+    }),
+
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/assets/', to: 'assets/' },
+      ],
     }),
   ],
   output: {
@@ -19,14 +34,21 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  //  optimization: {
-  //   runtimeChunk: 'single',
-  // },
+  optimization: {},
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.css$/,
+        exclude: /styles.css$/,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /styles.css$/,
+        use: [MiniCssExtract.loader, 'css-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        loader: 'file-loader',
       },
     ],
   },

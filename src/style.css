@@ -1,15 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2% 0 2%;
+  background-color: #13303e;
+  height: 10vh;
+}
+
+h1 {
+  color: #ffd857;
+  font-size: xx-large;
+}
+
+.hamburger {
+  width: 30px;
+  height: 30px;
+  border: #fff solid 1px;
+  border-radius: 10%;
+  background-color: #13303e;
+  cursor: pointer;
+}
+
+.hamburger.disabled {
+  display: none;
+}
+
+.hamburger span {
+  display: flex;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+  margin: 5px;
+}
+
+.nav-list-desktop {
+  display: none;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 100%;
+  top: 0;
+  background-color: #13303e;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.container-x {
+  display: flex;
+  flex-direction: row;
+  align-self: end;
+  color: #ffd857;
+  font-size: xx-large;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.container-x.disabled {
+  display: none;
+}
+
+.nav-list-mobile {
+  list-style: none;
+  padding-top: 30%;
+}
+
+.nav-list-mobile li {
+  margin-bottom: 30%;
+  text-align: center;
+}
+
+.nav-list-mobile li a {
+  text-decoration: none;
+  font-size: xx-large;
+  color: #fff;
+}
+
+.nav-list-mobile li a:focus {
+  color: #ffd857;
+}
+
+.nav-list-mobile li a:hover {
+  color: #ffd857;
+}
+
 main {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 5%;
+  flex-direction: column;
   padding: 5% 0 5% 5%;
+  margin-right: 5%;
 }
 
 .meal {
   display: flex;
   flex-direction: column;
-  width: 28%;
-  height: 28%;
+  width: 100%;
 }
 
 .container-name-likes {
@@ -30,16 +127,13 @@ main {
 .container-likes {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2%;
 }
 
 .like-icon {
   align-self: center;
   width: 30px;
   cursor: pointer;
-}
-
-.likes {
-  margin-top: 0;
 }
 
 .reservations,
@@ -72,6 +166,7 @@ main {
   color: #13303e;
   border: #13303e 1px solid;
 }
+
 
 button {
   transition: all 0.5s;
@@ -267,3 +362,56 @@ img {
 }
 
 /* end media query styles  */
+=======
+.like-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-list-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+  }
+
+  .nav-list-desktop li {
+    list-style: none;
+  }
+
+  .nav-list-desktop li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .nav-list-desktop li a:hover {
+    color: #ffd857;
+  }
+
+  .nav-list-desktop li a:focus {
+    color: #ffd857;
+  }
+
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5%;
+    margin-right: 0;
+  }
+
+  .meal {
+    width: 28%;
+    height: 28%;
+  }
+
+  .likes {
+    margin-top: 0;
+  }
+
