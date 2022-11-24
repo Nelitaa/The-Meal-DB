@@ -1,10 +1,17 @@
 import './style.css';
+
 import Meal from './modules/meal_class.js';
 import { Api } from './modules/api_class.js';
+
+
 import RENDER from './modules/render.js';
 import ApiLikes from './modules/api_likes_class.js';
 
+
+// import { postComments } from './modules/postcomments';
+
 window.addEventListener('load', () => {
+  // postComments();
   const API = new Api();
   API.getMeals().then((data) => {
     const all = data.meals;
@@ -12,7 +19,7 @@ window.addEventListener('load', () => {
       (meal) => new Meal(meal.strMeal, meal.strMealThumb, meal.idMeal),
     );
     RENDER(MEALS, all);
-  
+
 const HAMBURGER = document.querySelector('.hamburger');
 const MOBILE_MENU = document.querySelector('.mobile-menu');
 const X_BUTTON = document.querySelector('.container-x');
