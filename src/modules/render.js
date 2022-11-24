@@ -1,3 +1,5 @@
+import postComments from './postcomments.js';
+
 const ALL_MEALS = document.querySelector('#all-meals');
 const RENDER = (meals, alls) => {
   meals.forEach((meal) => {
@@ -90,6 +92,18 @@ const RENDER = (meals, alls) => {
       const close = document.querySelector('#close');
       close.addEventListener('click', () => {
         parmodal.style.display = 'none';
+      });
+      const form = document.querySelector('form');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const newData = {
+          item_id: meal.id,
+          username: form.name.value,
+          comment: form.textarea.value,
+        };
+        postComments(newData);
+        // console.log(meal.id, form.textarea.value, form.name.value);
+        // console.log('SUBMITED');
       });
     });
     MEAL.appendChild(COMMENTS);

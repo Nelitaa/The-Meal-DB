@@ -2,8 +2,7 @@
 
 # Webpack Exercise
 
-> This branch (show__popup) I created the popup by using the API I used the API from my coding partner.
-
+> This branch (post__comment) I made when the user write something in the input and wants to comment the data post into the API.
 
 ## Built With
 
@@ -13,6 +12,7 @@
 - APi json
 - Ecma script
 - Flexbox 
+- Thunder extension in vs code like postman 
 
 
 ## Getting Started

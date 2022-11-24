@@ -1,9 +1,12 @@
 import './style.css';
 import Meal from './modules/meal_class.js';
-import Api from './modules/api_class.js';
+import { Api } from './modules/api_class.js';
 import RENDER from './modules/render.js';
 
+// import { postComments } from './modules/postcomments';
+
 window.addEventListener('load', () => {
+  // postComments();
   const API = new Api();
   API.getMeals().then((data) => {
     const all = data.meals;

@@ -1,6 +1,6 @@
 const URL = 'https://themealdb.com/api';
 
-class Api {
+export class Api {
   constructor() {
     this.url = URL;
   }
@@ -12,5 +12,11 @@ class Api {
     return DATA;
   }
 }
-
-export default Api;
+export const postss = () => {
+  const a = new Api();
+  return a.getMeals().then((data) => data);
+};
+// const hello = async () => {
+//   const ss = await post();
+//   return ss;
+// };
