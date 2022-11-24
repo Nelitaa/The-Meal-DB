@@ -67,3 +67,9 @@ main {
   color: #13303e;
   border: #13303e 1px solid;
 }
+
+.like-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
