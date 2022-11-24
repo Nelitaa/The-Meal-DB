@@ -40,6 +40,56 @@ const RENDER = (meals) => {
     const COMMENTS = document.createElement('button');
     COMMENTS.className = 'comments';
     COMMENTS.innerHTML = 'Comments';
+    COMMENTS.addEventListener('click', () => {
+      const parmodal = document.querySelector('.parmodal');
+      parmodal.style.display = 'grid';
+      parmodal.innerHTML = `
+      <div class="parmodal__modal">
+        <div class="front"><button id="close" class="close">&times;</button></div>
+        <div class="parmodal__modal__details">
+          <div class="parmodal__modal__details__detail">
+          <div class="parmodal__modal__details__detail__responsive">
+            <img src="${meal.image}" alt="" class="responsive parmodal__modal__details__detail__responsive__respo">
+            </div>
+            <h3>Add comment</h3>
+            <form action="">
+              <div class="formcontrol">
+                <input type="text" name="name" id="name" placeholder="Name" />
+              </div>
+              <div class="formcontrol">
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="formcontrol">
+                <input type="submit" value="comment" />
+              </div>
+            </form>
+          </div>
+          <div class="parmodal__modal__details__detail">
+            <span>${meal.name}</span>
+            <p>
+              ${meal.description}
+            strInstructions
+            </p>
+            <h3>comments <span>14</span></h3>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    `;
+      const close = document.querySelector('#close');
+      close.addEventListener('click', () => {
+        parmodal.style.display = 'none';
+      });
+    });
     MEAL.appendChild(COMMENTS);
 
     const RESERVATIONS = document.createElement('button');

@@ -11,7 +11,7 @@ export default class Api {
 
   static async getAllMeals() {
     const arrObj = await this.getMeals();
-    const arrMeals = arrObj.map((meal) => new Meal(meal.idMeal, meal.strMeal, meal.strMealThumb));
+    const arrMeals = arrObj.map((meal) => new Meal(meal.idMeal, meal.strMeal, meal.strMealThumb, meal.strInstructions));
     return arrMeals;
   }
 }
