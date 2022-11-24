@@ -1,8 +1,7 @@
 import './style.css';
 import Api from './modules/api_class.js';
 import RENDER from './modules/render.js';
-import ApiLikes from './modules/api_likes_class.js';
-
+// import ApiLikes from './modules/api_likes_class.js';
 
 window.addEventListener('load', () => {
   const API = new Api();
@@ -12,7 +11,6 @@ window.addEventListener('load', () => {
       (meal) => new Meal(meal.strMeal, meal.strMealThumb, meal.idMeal),
     );
     RENDER(MEALS, all);
-
   });
 });
 

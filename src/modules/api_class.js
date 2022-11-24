@@ -3,13 +3,11 @@ import Meal from './meal_class.js';
 export default class Api {
   static URL = 'https://themealdb.com/api';
 
-
   async getMeals() {
     const RESPONSE = await fetch(`${this.url}/json/v1/1/search.php?s=`);
     const DATA = await RESPONSE.json();
     // console.log(DATA.meals);
     return DATA;
-
   }
 
   static async getAllMeals() {
