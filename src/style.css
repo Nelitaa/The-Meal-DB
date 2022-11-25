@@ -239,6 +239,14 @@ img {
   object-fit: cover;
   border-radius: 50%;
 }
+#ulc > li {
+  color: antiquewhite;
+  font-size: 17px;
+  margin: 18px 0;
+  background-color: #5a7f0efa;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
 
 /* end common styles */
 
