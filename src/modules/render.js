@@ -86,13 +86,6 @@ const RENDER = (meals) => {
       </div>
     `;
       getComments(meal.id).then((d) => {
-        const numofcom = document.getElementById('numofcom');
-        if (d.length > 0) {
-          numofcom.innerHTML = `(${d.length})`;
-        } else {
-          numofcom.innerHTML = '(0)';
-        }
-        // console.log(d.length);
         const ulc = document.getElementById('ulc');
         d.forEach((item) => {
           ulc.innerHTML += `
