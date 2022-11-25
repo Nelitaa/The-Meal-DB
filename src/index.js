@@ -4,6 +4,9 @@ import RENDER from './modules/render.js';
 import ApiLikes from './modules/api_likes_class.js';
 import mealsCounter from './modules/meals_counter.js';
 
+// eslint-disable-next-line import/no-unresolved
+const footer = require('./modules/footer.js');
+
 const HAMBURGER = document.querySelector('.hamburger');
 const MOBILE_MENU = document.querySelector('.mobile-menu');
 const X_BUTTON = document.querySelector('.container-x');
@@ -67,3 +70,27 @@ window.addEventListener('click', (e) => {
     parmodal.style.display = 'none';
   }
 });
+// =================================================================
+
+// start import
+
+// start all required elements
+const last = document.querySelector('footer .last');
+// end all required elements
+
+// start footer UI
+const footerUI = (items) => {
+  items.forEach(() => {
+    last.innerHTML = `
+    <div class="">${items[0]}</div>
+    <div class="">${items[1]}</div>
+          <div class="">${items[2]}</div>
+    `;
+  });
+};
+footerUI(footer);
+// end UI footer UI
+setTimeout(() => {
+  const footer = document.querySelector('footer');
+  footer.style.display = 'grid';
+}, 3000);
