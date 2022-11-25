@@ -5,4 +5,3 @@ const footer = [
 ];
 
 module.exports = footer;
-

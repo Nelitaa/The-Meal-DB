@@ -69,7 +69,6 @@ window.addEventListener('click', (e) => {
   if (e.target === parmodal) {
     parmodal.style.display = 'none';
   }
-
 });
 // =================================================================
 
@@ -95,4 +94,3 @@ setTimeout(() => {
   const footer = document.querySelector('footer');
   footer.style.display = 'grid';
 }, 3000);
-
