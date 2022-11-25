@@ -2,7 +2,6 @@ import './style.css';
 import Api from './modules/api_class.js';
 import RENDER from './modules/render.js';
 import ApiLikes from './modules/api_likes_class.js';
-import getComments from './modules/getcomments.js';
 
 const HAMBURGER = document.querySelector('.hamburger');
 const MOBILE_MENU = document.querySelector('.mobile-menu');
