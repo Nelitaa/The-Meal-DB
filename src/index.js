@@ -28,6 +28,13 @@ window.addEventListener('load', async () => {
     return meal;
   });
   RENDER(newMeals);
+  const mealCounter = document.querySelectorAll('.meal-counter');
+  let counter = 1;
+
+  mealCounter.forEach((meal) => {
+    meal.innerHTML = `Meal ${counter}`;
+    counter += 1;
+  });
   mealsCounter();
 
   document.addEventListener('click', (event) => {
