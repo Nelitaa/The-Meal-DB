@@ -77,8 +77,7 @@ const RENDER = (meals) => {
               ${meal.description}
             strInstructions
             </p>
-            <h3>comments <span>14</span></h3>
-            <button id="refresh">Refresh</button>
+            <h3>comments <span id="numofcom"></span></h3>
             <ul id="ulc">
              
             </ul>
@@ -87,6 +86,13 @@ const RENDER = (meals) => {
       </div>
     `;
       getComments(meal.id).then((d) => {
+        const numofcom = document.getElementById('numofcom');
+        if (d.length > 0) {
+          numofcom.innerHTML = `(${d.length})`;
+        } else {
+          numofcom.innerHTML = '(0)';
+        }
+        // console.log(d.length);
         const ulc = document.getElementById('ulc');
         d.forEach((item) => {
           ulc.innerHTML += `
@@ -96,17 +102,6 @@ const RENDER = (meals) => {
       `;
         });
       });
-      // const refresh = document.getElementById('refresh');
-      // refresh.addEventListener( 'click', () =>{
-      //   getComments().then((d) => {
-      //     const ulc = document.getElementById("ulc");
-      //   d.forEach(item =>{
-      //     ulc.innerHTML += `
-      //     <li>${item.username + " " + item.comment + " " + item.creation_date}</li>
-      //     `;
-      //   })
-      //   });
-      // });
       const close = document.querySelector('#close');
       close.addEventListener('click', () => {
         parmodal.style.display = 'none';
