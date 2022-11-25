@@ -134,3 +134,4 @@ const RENDER = (meals) => {
 };
 
 export default RENDER;
+module.exports = getComments();
