@@ -3,9 +3,7 @@ import Api from './modules/api_class.js';
 import RENDER from './modules/render.js';
 import ApiLikes from './modules/api_likes_class.js';
 import mealsCounter from './modules/meals_counter.js';
-
-// eslint-disable-next-line import/no-unresolved
-const footer = require('./modules/footer.js');
+import footer from './modules/footer.js';
 
 const HAMBURGER = document.querySelector('.hamburger');
 const MOBILE_MENU = document.querySelector('.mobile-menu');
