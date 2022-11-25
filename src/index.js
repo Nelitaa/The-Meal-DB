@@ -7,6 +7,7 @@ import mealsCounter from './modules/meals_counter.js';
 const HAMBURGER = document.querySelector('.hamburger');
 const MOBILE_MENU = document.querySelector('.mobile-menu');
 const X_BUTTON = document.querySelector('.container-x');
+const parmodal = document.querySelector('.parmodal');
 
 HAMBURGER.addEventListener('click', () => {
   HAMBURGER.classList.toggle('disabled');
@@ -59,4 +60,10 @@ window.addEventListener('load', async () => {
       }
     }
   });
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === parmodal) {
+    parmodal.style.display = 'none';
+  }
 });
