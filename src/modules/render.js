@@ -20,7 +20,7 @@ const RENDER = (meals) => {
 
     const MEAL_NAME = document.createElement('h2');
     MEAL_NAME.className = 'meal-name';
-    MEAL_NAME.innerHTML = meal.name;
+    MEAL_NAME.innerHTML = `${meal.name} <span class="meal-counter"></span>`;
     CONTAINER_NAME_LIKES.appendChild(MEAL_NAME);
 
     const CONTAINER_LIKES = document.createElement('div');

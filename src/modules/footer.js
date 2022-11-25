@@ -3,4 +3,6 @@ const footer = [
   'powered By : Osama And Nela',
   'Privacy Policy | Terms & Conditions',
 ];
+
 module.exports = footer;
+
