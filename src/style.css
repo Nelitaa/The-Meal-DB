@@ -82,6 +82,10 @@ h1 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-list-mobile li a {
   text-decoration: none;
   font-size: xx-large;
@@ -166,6 +170,148 @@ main {
   background-color: #fff;
   border: none;
   cursor: pointer;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  position: relative;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6.5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e8dfec;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 51.2413%;
+  background-color: #191c23;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.responsive {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#ulc > li {
+  color: antiquewhite;
+  font-size: 17px;
+  margin: 18px 0;
+  background-color: #5a7f0efa;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.parmodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  place-items: center;
+  backdrop-filter: blur(8px);
+}
+
+.parmodal__modal {
+  background-color: #191c23;
+  width: 750px;
+  height: 600px;
+  border-radius: 5px;
+  padding: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.front {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.front > button {
+  width: 31px;
+  height: 31px;
+  border: 0;
+  outline: 0;
+  background: antiquewhite;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.parmodal__modal__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
+.parmodal__modal__details__detail > span {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #ffd857;
+}
+
+.parmodal__modal__details__detail > p:nth-child(2) {
+  margin-bottom: 15px;
+  padding: 16px 17px 18px 14px;
+  border: 2px solid lightgoldenrodyellow;
+  color: #ffd857;
+  height: 332px;
+  max-height: 320px;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+.parmodal__modal__details__detail > h3 {
+  margin-bottom: 20px;
+  color: #ffd857;
+}
+
+.formcontrol {
+  margin-bottom: 15px;
+}
+
+.formcontrol > input {
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  box-shadow: inset 0 3px 30px #414141cc;
+  border-radius: 5px;
+}
+
+.formcontrol > input:nth-child(3) {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.formcontrol > textarea {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: inset 0 3px 30px #414141cc;
 }
 
 @media only screen and (min-width: 768px) {
