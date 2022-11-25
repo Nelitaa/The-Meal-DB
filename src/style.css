@@ -120,7 +120,7 @@ main {
 }
 
 .meal-name {
-  color: #ffd857;
+  color: #13303e;
   margin-top: 0;
 }
 
@@ -313,6 +313,7 @@ img {
   border-radius: 5px;
   box-shadow: inset 0 3px 30px #414141cc;
 }
+
 /* start footer */
 footer {
   background-color: #13303e;
@@ -389,10 +390,6 @@ footer .last > div:nth-child(2) {
   .meal {
     width: 28%;
     height: 28%;
-  }
-
-  p.likes {
-    color: #ffd857;
   }
 
   .likes {
