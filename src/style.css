@@ -82,6 +82,10 @@ h1 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-list-mobile li a {
   text-decoration: none;
   font-size: xx-large;
@@ -167,7 +171,6 @@ main {
   border: #13303e 1px solid;
 }
 
-
 button {
   transition: all 0.5s;
 }
@@ -227,10 +230,6 @@ html {
 /* start common styles */
 ul {
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 img {
@@ -362,7 +361,6 @@ img {
 }
 
 /* end media query styles  */
-=======
 .like-button {
   background-color: #fff;
   border: none;
@@ -415,4 +413,3 @@ img {
     margin-top: 0;
   }
 }
-

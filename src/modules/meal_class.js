@@ -1,7 +1,13 @@
 export default class Meal {
-  constructor(name, image, id) {
+  constructor(id, name, image, likes = 0, description) {
+    this.id = id;
     this.name = name;
     this.image = image;
-    this.id = id;
+    this.likes = likes;
+    this.description = description;
+  }
+
+  set changeLikes(value) {
+    this.likes = value;
   }
 }

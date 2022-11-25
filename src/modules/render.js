@@ -1,7 +1,8 @@
-import postComments from './postcomments.js';
+// eslint-disable-next-line import/no-unresolved
+import postComments from './comments.js';
 
 const ALL_MEALS = document.querySelector('#all-meals');
-const RENDER = (meals, alls) => {
+const RENDER = (meals) => {
   meals.forEach((meal) => {
     const MEAL = document.createElement('div');
     MEAL.className = 'meal';
@@ -41,11 +42,7 @@ const RENDER = (meals, alls) => {
     const COMMENTS = document.createElement('button');
     COMMENTS.className = 'comments';
     COMMENTS.innerHTML = 'Comments';
-    COMMENTS.setAttribute('name', `${meal.id}`);
-    COMMENTS.addEventListener('click', (e) => {
-      const a = e.target.name;
-      const res = alls.filter((item) => item.idMeal === a);
-      // console.log(res[0]);
+    COMMENTS.addEventListener('click', () => {
       const parmodal = document.querySelector('.parmodal');
       parmodal.style.display = 'grid';
       parmodal.innerHTML = `
@@ -53,9 +50,9 @@ const RENDER = (meals, alls) => {
         <div class="front"><button id="close" class="close">&times;</button></div>
         <div class="parmodal__modal__details">
           <div class="parmodal__modal__details__detail">
-           <div class="parmodal__modal__details__detail__responsive">
-            <img src="${res[0].strMealThumb}" alt="" class="responsive parmodal__modal__details__detail__responsive__respo">
-           </div>
+          <div class="parmodal__modal__details__detail__responsive">
+            <img src="${meal.image}" alt="" class="responsive parmodal__modal__details__detail__responsive__respo">
+            </div>
             <h3>Add comment</h3>
             <form action="">
               <div class="formcontrol">
@@ -75,16 +72,14 @@ const RENDER = (meals, alls) => {
             </form>
           </div>
           <div class="parmodal__modal__details__detail">
-            <span>${res[0].strMeal}</span>
+            <span>${meal.name}</span>
             <p>
-            ${res[0].strInstructions}
+              ${meal.description}
             strInstructions
             </p>
-            <h3>comments <span>14</span></h3>
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
+            <h3>comments <span id="numofcom"></span></h3>
+            <ul id="ulc">
+             
             </ul>
           </div>
         </div>
@@ -97,17 +92,23 @@ const RENDER = (meals, alls) => {
       const form = document.querySelector('form');
       form.addEventListener('submit', (e) => {
         e.preventDefault();
-        const newData = {
-          item_id: meal.id,
-          username: form.name.value,
-          comment: form.textarea.value,
-        };
-        postComments(newData);
-        // console.log(meal.id, form.textarea.value, form.name.value);
-        // console.log('SUBMITED');
+        if (form.name.value === '' || form.textarea.value === '') {
+          // eslint-disable-next-line no-alert
+          alert('Please enter the data');
+        } else {
+          const newData = {
+            item_id: meal.id,
+            username: form.name.value,
+            comment: form.textarea.value,
+          };
+          postComments(newData);
+          form.name.value = ' ';
+          form.textarea.value = ' ';
+        }
       });
     });
     MEAL.appendChild(COMMENTS);
+
     const RESERVATIONS = document.createElement('button');
     RESERVATIONS.className = 'reservations';
     RESERVATIONS.innerHTML = 'Reservations';
