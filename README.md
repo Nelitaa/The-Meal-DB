@@ -12,6 +12,20 @@
 - webpack
 - API: [BASE API](https://www.themealdb.com/api.php), ([Involvement API](https://www.themealdb.com/api.php))
 
+## Live Demo
+
+[Live Demo Link](https://nelitaa.github.io/Capstone-Project-JavaScript/)
+
+## Kanban board
+
+[Projects](https://github.com/users/Nelitaa/projects/5/views/1)
+
+## Code reviews
+
+From [@Nelitaa](https://github.com/Nelitaa)
+[tests](https://github.com/Nelitaa/Capstone-Project-JavaScript/pull/95)
+[show popup](https://github.com/Nelitaa/Capstone-Project-JavaScript/pull/89)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -29,6 +43,10 @@ npm
 -Select the destination folder. Write: cd ECapstone-Project-JavaScript
 -All the files should be cloned to your local folder and are ready to be used.
 -Write: npm install
+
+### Test
+
+-Write: npm run test
 
 ## Authors
 
