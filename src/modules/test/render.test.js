@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-
+// +++++++
 const getcom = require('../render.js');
 
 test('counts the data and displays on HTML', () => {
