@@ -1,20 +1,88 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# The Meal DB
 
-> This is an informative website about the The Meal DB, you can find all the information about the meals, such as the name, image, description and you also can interact with likes and comments.
+<div align="center">
 
-## Built With
+  <img src="https://user-images.githubusercontent.com/78832703/203859927-696905b8-edee-4cc6-8642-0759f99b9ffd.png"
+alt="logo" width="140"  height="auto" />
+  <br/>
 
-- Html
-- Css
-- JavaScript
-- webpack
-- API: [BASE API](https://www.themealdb.com/api.php), ([Involvement API](https://www.themealdb.com/api.php))
+  <h3><b>The Meal DB</b></h3>
 
-## Live Demo
+</div>
 
-[Live Demo Link](https://nelitaa.github.io/Capstone-Project-JavaScript/dist/)
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+- [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 The Meal DB <a name="about-project"></a>
+
+>  This is an informative website about the The Meal DB, you can find all the information about the meals, such as the name, image, description and you also can interact with likes and comments.
+
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Building</summary>
+  <ul>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
+    <li>HTML 5</li>
+    <li>CSS 3</li>
+    <li>ES6</li>
+    <li>React</li>
+  </ul>
+</details>
+<details>
+  <summary>Bundle</summary>
+  <ul>
+    <li><a href="https://webpack.js.org/">WebPack</a></li>
+    <li><a href="https://www.npmjs.com/">NPM</a></li>
+  </ul>
+</details>
+
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://webpack.js.org/configuration/dev-server/">React server</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+You can find a live version of the project here: https://nelitaa.github.io/Capstone-Project-JavaScript/dist/
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Kanban board
 
@@ -25,6 +93,13 @@
 From [@Nelitaa](https://github.com/Nelitaa)
 [tests](https://github.com/Nelitaa/Capstone-Project-JavaScript/pull/95)
 [show popup](https://github.com/Nelitaa/Capstone-Project-JavaScript/pull/89)
+
+From [@Osama](https://github.com/osamaashraf6)
+[add header](https://github.com/Nelitaa/Capstone-Project-JavaScript/pull/85)
+[display likes](https://github.com/Nelitaa/Capstone-Project-JavaScript/pull/88)
+
+<!-- GETTING STARTED -->
+
 
 ## Getting Started
 
@@ -48,7 +123,14 @@ npm
 
 -Write: npm run test
 
-## Authors
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+> Mention all of the collaborators of this project.
 
 👤 **Marianela Muñoz Gutierrez**
 
@@ -56,11 +138,16 @@ npm
 - Twitter: [@MarianelaMunoz\_](https://twitter.com/MarianelaMunoz_)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/marianela-muñoz-gutierrez/)
 
-👤 **Osama Ashraf**
+
+👤 **Author2**
 
 - GitHub: [Osama Ashraf](https://github.com/osamaashraf6)
 - Twitter: [Osama Ashraf](https://twitter.com/OsamaAshraf578?t=l75KjrhQgK4h-vSPfgk1gA&s=08)
 - LinkedIn: [Osama Ashraf](https://www.linkedin.com/in/osama-salem-2a046b203)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing
 
@@ -72,10 +159,23 @@ Feel free to check the [issues page](/issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Microverse.
+<!-- ACKNOWLEDGEMENTS -->
 
-## 📝 License
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-This project is [MIT](/LICENSE.md) licensed.
+
+- Hat tip to anyone whose code was used
+- Microverse
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
