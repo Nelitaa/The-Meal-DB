@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://nelitaa.github.io/Capstone-Project-JavaScript/)
+[Live Demo Link](https://nelitaa.github.io/The-Meal-DB/dist/)
 
 ## Kanban board
 
