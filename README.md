@@ -12,9 +12,11 @@
 - webpack
 - API: [BASE API](https://www.themealdb.com/api.php), ([Involvement API](https://www.themealdb.com/api.php))
 
-## Live Demo
+## 🚀 Live Demo <a name="live-demo"></a>
 
 [Live Demo Link](https://nelitaa.github.io/The-Meal-DB/dist/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Kanban board
 
