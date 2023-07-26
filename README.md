@@ -6,8 +6,7 @@
 
 ## Built With
 
-- Html
-- Css
+- Html & Css
 - JavaScript
 - webpack
 - API: [BASE API](https://www.themealdb.com/api.php), ([Involvement API](https://www.themealdb.com/api.php))
